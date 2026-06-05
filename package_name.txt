@@ -1,0 +1,6 @@
+1. alembic
+2. sqlmodel
+3. asyncpg
+4. argon2-cffi
+5. greenlet
+6. npx gitignore python
