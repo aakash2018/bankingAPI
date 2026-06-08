@@ -4,3 +4,5 @@
 4. argon2-cffi
 5. greenlet
 6. npx gitignore python
+
+8. start command = vicorn src.app.main:app --reload --port=8001
