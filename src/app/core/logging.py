@@ -20,5 +20,5 @@ logger.add(
     diagnose=True
 )
 
-def get_logger(name: str):
+def get_logger(name: str=""):
     return logger.bind(name=name)

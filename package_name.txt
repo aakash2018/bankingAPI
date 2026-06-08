@@ -4,5 +4,17 @@
 4. argon2-cffi
 5. greenlet
 6. npx gitignore python
-
-8. start command = vicorn src.app.main:app --reload --port=8001
+7. docker network create banking_local_network
+8. start command = uvicorn src.app.main:app --reload --port=8001
+9. docker network ls
+10. docker compose -f local.yml
+11. docker compose -f local.yml up --build -d --remove-orphans
+12. docker compose -f local.yml down -v
+13. docker  compose -f local.yml exec postgres psql -U 
+jayshreeram -d banking
+14. database list dekhne ke liye \l
+15. database switch karne ke liye  \c databasename
+16. table list dekhne ke liye \dt
+17. kisi table ka schema dekhne ke liye  \d table_name
+18. query all recort select * from users;
+19. exit postgress \q

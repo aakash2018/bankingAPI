@@ -1,0 +1,19 @@
+services:
+  postgres:
+    build:
+      context: ./src/docker/local/postgres
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    env_file:
+      - ./.envs/.env.local
+    networks:
+      - banking_local_network
+networks:
+  banking_local_network:
+    external: true
+    driver: bridge
+volumes:
+  postgres_data:
