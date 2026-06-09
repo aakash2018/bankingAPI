@@ -18,3 +18,4 @@ jayshreeram -d banking
 17. kisi table ka schema dekhne ke liye  \d table_name
 18. query all recort select * from users;
 19. exit postgress \q
+20. docker compose -f local.yml up --build -d --remove-orphans
